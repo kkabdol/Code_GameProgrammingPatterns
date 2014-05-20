@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F4B2569F-FE9F-495B-938E-923CDC7D89CC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GameProgrammingPatterns</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2DF778A8-72B8-4C78-A390-4E79EA07757B</key>
+		<string>../Command</string>
+		<key>4C7B79A8-E4E1-48FF-A5A4-11551BB74E9C</key>
+		<string>../RedoUndoCommand</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2DF778A8-72B8-4C78-A390-4E79EA07757B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Command</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4C7B79A8-E4E1-48FF-A5A4-11551BB74E9C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RedoUndoCommand</string>
+		</dict>
+	</array>
+</dict>
+</plist>
