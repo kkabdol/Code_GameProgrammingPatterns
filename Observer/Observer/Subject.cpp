@@ -9,26 +9,32 @@
 #include "Subject.h"
 
 void Subject::addObserver(Observer* observer) {
-    if (numObservers_ < MAX_OBSERVERS) {
-        observers_[numObservers_] = observer;
-        ++numObservers_;
-    }
+    observer->next_ = head_;
+    head_ = observer;
 }
 
 void Subject::removeObserver(Observer* observer) {
-    for (int i = 0; i < numObservers_; ++i) {
-        if (observers_[i] == observer) {
-            for (int j = i+1; j < numObservers_; ++j) {
-                observers_[j-1] = observers_[j];
-            }
-            --numObservers_;
+    if (head_ == nullptr) {
+        head_ = observer;
+        return;
+    }
+    
+    Observer* cur;
+    while (cur != nullptr) {
+        if (cur->next_ == nullptr) {
+            cur->next_ = observer;
+            observer->next_ = nullptr;
             return;
         }
+        
+        cur = cur->next_;
     }
 }
 
 void Subject::notify(const Entity& entity, Event event) {
-    for (int i = 0; i < numObservers_; ++i) {
-        observers_[i]->onNotify(entity, event);
+    Observer* cur = head_;
+    while (cur != nullptr) {
+        cur->onNotify(entity, event);
+        cur = cur->next_;
     }
 }

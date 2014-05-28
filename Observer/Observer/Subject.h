@@ -18,6 +18,8 @@ const int MAX_OBSERVERS = 10;
 class Subject
 {
 public:
+    Subject() : head_(nullptr){}
+    
     void addObserver(Observer* observer);
     void removeObserver(Observer* observer);
     
@@ -25,8 +27,8 @@ protected:
     void notify(const Entity& entity, Event event);
     
 private:
-    Observer* observers_[MAX_OBSERVERS];
-    int numObservers_;
+    
+    Observer* head_;
 };
 
 #endif /* defined(__Observer__Subject__) */
