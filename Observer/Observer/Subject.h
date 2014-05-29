@@ -9,17 +9,15 @@
 #ifndef Observer_Subject_h
 #define Observer_Subject_h
 
-#include "Observer.h"
+#include <List>
 #include "Entity.h"
 #include "Event.h"
 
-const int MAX_OBSERVERS = 10;
+class Observer;
 
 class Subject
 {
 public:
-    Subject() : head_(nullptr){}
-    
     void addObserver(Observer* observer);
     void removeObserver(Observer* observer);
     
@@ -27,8 +25,7 @@ protected:
     void notify(const Entity& entity, Event event);
     
 private:
-    
-    Observer* head_;
+    std::list<Observer*> observers_;
 };
 
 #endif /* defined(__Observer__Subject__) */

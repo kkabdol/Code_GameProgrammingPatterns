@@ -11,20 +11,20 @@
 
 #include "Entity.h"
 #include "Event.h"
+#include <list>
+
+class Subject;
 
 class Observer
 {
-    friend class Subject;
-    
 public:
-    Observer() : next_(nullptr) {};
-    virtual ~Observer() {};
-    
+    ~Observer();
     virtual void onNotify(const Entity& entity, Event event) = 0;
-    
+    void addSubject(Subject* subject);
 private:
-    Observer* next_;
+    std::list<Subject*> subjects_;
+    
 };
 
 
-#endif
+#endif /* defined(__Observer__Observer__) */

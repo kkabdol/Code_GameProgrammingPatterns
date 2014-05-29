@@ -7,34 +7,24 @@
 //
 
 #include "Subject.h"
+#include "Observer.h"
+#include <algorithm>
 
 void Subject::addObserver(Observer* observer) {
-    observer->next_ = head_;
-    head_ = observer;
-}
-
-void Subject::removeObserver(Observer* observer) {
-    if (head_ == nullptr) {
-        head_ = observer;
+    if (std::find(observers_.begin(), observers_.end(), observer) != observers_.end()) {
         return;
     }
     
-    Observer* cur;
-    while (cur != nullptr) {
-        if (cur->next_ == nullptr) {
-            cur->next_ = observer;
-            observer->next_ = nullptr;
-            return;
-        }
-        
-        cur = cur->next_;
-    }
+    observers_.push_back(observer);
+    observer->addSubject(this);
+}
+
+void Subject::removeObserver(Observer* observer) {
+    observers_.remove(observer);
 }
 
 void Subject::notify(const Entity& entity, Event event) {
-    Observer* cur = head_;
-    while (cur != nullptr) {
-        cur->onNotify(entity, event);
-        cur = cur->next_;
+    for (std::list<Observer*>::iterator it = observers_.begin(); it != observers_.end(); ++it) {
+        (*it)->onNotify(entity, event);
     }
 }

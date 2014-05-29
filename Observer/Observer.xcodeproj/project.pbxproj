@@ -13,6 +13,7 @@
 		2546581B1935DED700D64923 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254658191935DED700D64923 /* Hero.cpp */; };
 		2546581D1935E24C00D64923 /* Subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2546581C1935E24C00D64923 /* Subject.cpp */; };
 		254658201935E2A400D64923 /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2546581E1935E2A400D64923 /* Physics.cpp */; };
+		25D04D2919371EE2003E3C5A /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25D04D2819371EE2003E3C5A /* Observer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		2546581C1935E24C00D64923 /* Subject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Subject.cpp; sourceTree = "<group>"; };
 		2546581E1935E2A400D64923 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; };
 		2546581F1935E2A400D64923 /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
+		25D04D2819371EE2003E3C5A /* Observer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +83,12 @@
 				254658191935DED700D64923 /* Hero.cpp */,
 				2546581A1935DED700D64923 /* Hero.h */,
 				254658141935D97600D64923 /* Event.h */,
+				25D04D2819371EE2003E3C5A /* Observer.cpp */,
 				254658131935D91D00D64923 /* Observer.h */,
 				254658161935DCF000D64923 /* Achievements.cpp */,
 				254658171935DCF000D64923 /* Achievements.h */,
-				254658151935D9ED00D64923 /* Subject.h */,
 				2546581C1935E24C00D64923 /* Subject.cpp */,
+				254658151935D9ED00D64923 /* Subject.h */,
 				2546581E1935E2A400D64923 /* Physics.cpp */,
 				2546581F1935E2A400D64923 /* Physics.h */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2546581D1935E24C00D64923 /* Subject.cpp in Sources */,
+				25D04D2919371EE2003E3C5A /* Observer.cpp in Sources */,
 				2546581B1935DED700D64923 /* Hero.cpp in Sources */,
 				254658201935E2A400D64923 /* Physics.cpp in Sources */,
 				254658081935D83C00D64923 /* main.cpp in Sources */,
@@ -257,6 +261,7 @@
 				2546580F1935D83C00D64923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,7 +20,8 @@ int main(int argc, const char * argv[])
     // init
     physics.addObserver(&achievements);
     achievements.showUnlocked();
-    
+
+    // do
     physics.updateEntity(hero);
     achievements.showUnlocked();
     
