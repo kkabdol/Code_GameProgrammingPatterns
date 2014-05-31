@@ -14,35 +14,10 @@
 class Spawner
 {
 public:
-    virtual ~Spawner() {}
-    virtual Monster* spawnMonster() = 0;
-};
-
-class GhostSpawner : public Spawner
-{
-public:
-    virtual Monster* spawnMonster()
-    {
-        return new Ghost();
-    }
-};
-
-class DemonSpawner : public Spawner
-{
-public:
-    virtual Monster* spawnMonster()
-    {
-        return new Demon();
-    }
-};
-
-class SorcerorSpawner : public Spawner
-{
-public:
-    virtual Monster* spawnMonster()
-    {
-        return new Sorceror();
-    }
+    Spawner(Monster* prototype) : prototype_(prototype) {}
+    Monster* spawnMonster();
+private:
+    Monster* prototype_;
 };
 
 #endif /* defined(__Prototype__Spawner__) */

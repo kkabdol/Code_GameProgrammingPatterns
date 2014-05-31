@@ -7,3 +7,7 @@
 //
 
 #include "Spawner.h"
+
+Monster* Spawner::spawnMonster() {
+    return prototype_->clone();
+}

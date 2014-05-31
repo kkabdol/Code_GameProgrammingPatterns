@@ -10,19 +10,22 @@
 
 int main(int argc, const char * argv[])
 {
+    Ghost ghost;
+    Demon demon;
+    Sorceror sorceror;
     Monster* monster = nullptr;
     
-    GhostSpawner gs;
+    Spawner gs = Spawner(&ghost);
     monster = gs.spawnMonster();
     monster->scream();
     delete monster;
     
-    DemonSpawner ds;
+    Spawner ds = Spawner(&demon);
     monster = ds.spawnMonster();
     monster->scream();
     delete monster;
     
-    SorcerorSpawner ss;
+    Spawner ss = Spawner(&sorceror);
     monster = ss.spawnMonster();
     monster->scream();
     delete monster;
