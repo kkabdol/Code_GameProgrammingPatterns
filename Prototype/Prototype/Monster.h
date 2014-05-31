@@ -12,28 +12,27 @@
 class Monster {
 public:
     virtual ~Monster() {};
-    virtual Monster* clone() = 0;
     virtual void scream() = 0;
 };
 
 class Ghost : public Monster
 {
 public:
-    virtual Monster* clone();
+    static Monster* clone();
     virtual void scream();
 };
 
 class Demon : public Monster
 {
 public:
-    virtual Monster* clone();
+    static Monster* clone();
     virtual void scream();
 };
 
 class Sorceror : public Monster
 {
 public:
-    virtual Monster* clone();
+    static Monster* clone();
     virtual void scream();
 };
 

@@ -12,7 +12,6 @@
 Monster* Ghost::clone() {
     return new Ghost();
 }
-
 void Ghost::scream() {
     std::cout << "I'm a ghost!" << std::endl;
 }

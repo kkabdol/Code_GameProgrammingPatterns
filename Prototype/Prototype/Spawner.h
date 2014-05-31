@@ -11,13 +11,15 @@
 
 #include "Monster.h"
 
+typedef Monster* (*SpawnCallback)();
+
 class Spawner
 {
 public:
-    Spawner(Monster* prototype) : prototype_(prototype) {}
+    Spawner(SpawnCallback spawn) : spawn_(spawn) {}
     Monster* spawnMonster();
 private:
-    Monster* prototype_;
+    SpawnCallback spawn_;
 };
 
 #endif /* defined(__Prototype__Spawner__) */

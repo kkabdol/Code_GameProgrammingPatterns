@@ -15,17 +15,17 @@ int main(int argc, const char * argv[])
     Sorceror sorceror;
     Monster* monster = nullptr;
     
-    Spawner gs = Spawner(&ghost);
+    Spawner gs = Spawner(Ghost::clone);
     monster = gs.spawnMonster();
     monster->scream();
     delete monster;
     
-    Spawner ds = Spawner(&demon);
+    Spawner ds = Spawner(Demon::clone);
     monster = ds.spawnMonster();
     monster->scream();
     delete monster;
     
-    Spawner ss = Spawner(&sorceror);
+    Spawner ss = Spawner(Sorceror::clone);
     monster = ss.spawnMonster();
     monster->scream();
     delete monster;
