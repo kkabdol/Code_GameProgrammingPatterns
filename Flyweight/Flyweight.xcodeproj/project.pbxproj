@@ -7,37 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		254657EC1934590C00D64923 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254657EB1934590C00D64923 /* main.cpp */; };
-		254657EE1934590C00D64923 /* Flyweight.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 254657ED1934590C00D64923 /* Flyweight.1 */; };
-		254657F719345BFE00D64923 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254657F519345BFE00D64923 /* World.cpp */; };
-		254657FA19345C1700D64923 /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254657F819345C1700D64923 /* Terrain.cpp */; };
+		25E6AD9C1939A3920037FB4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6AD981939A3920037FB4B /* main.cpp */; };
+		25E6AD9D1939A3920037FB4B /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6AD991939A3920037FB4B /* Terrain.cpp */; };
+		25E6AD9E1939A3920037FB4B /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6AD9A1939A3920037FB4B /* World.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		254657E61934590C00D64923 /* CopyFiles */ = {
+		25E6AD881939A3510037FB4B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				254657EE1934590C00D64923 /* Flyweight.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		254657E81934590C00D64923 /* Flyweight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Flyweight; sourceTree = BUILT_PRODUCTS_DIR; };
-		254657EB1934590C00D64923 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		254657ED1934590C00D64923 /* Flyweight.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Flyweight.1; sourceTree = "<group>"; };
-		254657F519345BFE00D64923 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
-		254657F619345BFE00D64923 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
-		254657F819345C1700D64923 /* Terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Terrain.cpp; sourceTree = "<group>"; };
-		254657F919345C1700D64923 /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terrain.h; sourceTree = "<group>"; };
+		25E6AD8A1939A3510037FB4B /* Flyweight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Flyweight; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E6AD961939A3920037FB4B /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Terrain.h; path = ../../../Flyweight/Flyweight/Terrain.h; sourceTree = "<group>"; };
+		25E6AD971939A3920037FB4B /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = World.h; path = ../../../Flyweight/Flyweight/World.h; sourceTree = "<group>"; };
+		25E6AD981939A3920037FB4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../Flyweight/Flyweight/main.cpp; sourceTree = "<group>"; };
+		25E6AD991939A3920037FB4B /* Terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Terrain.cpp; path = ../../../Flyweight/Flyweight/Terrain.cpp; sourceTree = "<group>"; };
+		25E6AD9A1939A3920037FB4B /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = ../../../Flyweight/Flyweight/World.cpp; sourceTree = "<group>"; };
+		25E6AD9B1939A3920037FB4B /* Flyweight.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; name = Flyweight.1; path = ../../../Flyweight/Flyweight/Flyweight.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		254657E51934590C00D64923 /* Frameworks */ = {
+		25E6AD871939A3510037FB4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,31 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		254657DF1934590C00D64923 = {
+		25E6AD811939A3510037FB4B = {
 			isa = PBXGroup;
 			children = (
-				254657EA1934590C00D64923 /* Flyweight */,
-				254657E91934590C00D64923 /* Products */,
+				25E6AD8C1939A3510037FB4B /* Flyweight */,
+				25E6AD8B1939A3510037FB4B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		254657E91934590C00D64923 /* Products */ = {
+		25E6AD8B1939A3510037FB4B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				254657E81934590C00D64923 /* Flyweight */,
+				25E6AD8A1939A3510037FB4B /* Flyweight */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		254657EA1934590C00D64923 /* Flyweight */ = {
+		25E6AD8C1939A3510037FB4B /* Flyweight */ = {
 			isa = PBXGroup;
 			children = (
-				254657EB1934590C00D64923 /* main.cpp */,
-				254657F819345C1700D64923 /* Terrain.cpp */,
-				254657F919345C1700D64923 /* Terrain.h */,
-				254657F519345BFE00D64923 /* World.cpp */,
-				254657F619345BFE00D64923 /* World.h */,
-				254657ED1934590C00D64923 /* Flyweight.1 */,
+				25E6AD961939A3920037FB4B /* Terrain.h */,
+				25E6AD971939A3920037FB4B /* World.h */,
+				25E6AD981939A3920037FB4B /* main.cpp */,
+				25E6AD991939A3920037FB4B /* Terrain.cpp */,
+				25E6AD9A1939A3920037FB4B /* World.cpp */,
+				25E6AD9B1939A3920037FB4B /* Flyweight.1 */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
@@ -79,13 +77,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		254657E71934590C00D64923 /* Flyweight */ = {
+		25E6AD891939A3510037FB4B /* Flyweight */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 254657F11934590C00D64923 /* Build configuration list for PBXNativeTarget "Flyweight" */;
+			buildConfigurationList = 25E6AD931939A3510037FB4B /* Build configuration list for PBXNativeTarget "Flyweight" */;
 			buildPhases = (
-				254657E41934590C00D64923 /* Sources */,
-				254657E51934590C00D64923 /* Frameworks */,
-				254657E61934590C00D64923 /* CopyFiles */,
+				25E6AD861939A3510037FB4B /* Sources */,
+				25E6AD871939A3510037FB4B /* Frameworks */,
+				25E6AD881939A3510037FB4B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -93,50 +91,50 @@
 			);
 			name = Flyweight;
 			productName = Flyweight;
-			productReference = 254657E81934590C00D64923 /* Flyweight */;
+			productReference = 25E6AD8A1939A3510037FB4B /* Flyweight */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		254657E01934590C00D64923 /* Project object */ = {
+		25E6AD821939A3510037FB4B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = kkabdol;
 			};
-			buildConfigurationList = 254657E31934590C00D64923 /* Build configuration list for PBXProject "Flyweight" */;
+			buildConfigurationList = 25E6AD851939A3510037FB4B /* Build configuration list for PBXProject "Flyweight" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 254657DF1934590C00D64923;
-			productRefGroup = 254657E91934590C00D64923 /* Products */;
+			mainGroup = 25E6AD811939A3510037FB4B;
+			productRefGroup = 25E6AD8B1939A3510037FB4B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				254657E71934590C00D64923 /* Flyweight */,
+				25E6AD891939A3510037FB4B /* Flyweight */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		254657E41934590C00D64923 /* Sources */ = {
+		25E6AD861939A3510037FB4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				254657F719345BFE00D64923 /* World.cpp in Sources */,
-				254657EC1934590C00D64923 /* main.cpp in Sources */,
-				254657FA19345C1700D64923 /* Terrain.cpp in Sources */,
+				25E6AD9C1939A3920037FB4B /* main.cpp in Sources */,
+				25E6AD9D1939A3920037FB4B /* Terrain.cpp in Sources */,
+				25E6AD9E1939A3920037FB4B /* World.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		254657EF1934590C00D64923 /* Debug */ = {
+		25E6AD911939A3510037FB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -174,7 +172,7 @@
 			};
 			name = Debug;
 		};
-		254657F01934590C00D64923 /* Release */ = {
+		25E6AD921939A3510037FB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -206,14 +204,14 @@
 			};
 			name = Release;
 		};
-		254657F21934590C00D64923 /* Debug */ = {
+		25E6AD941939A3510037FB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		254657F31934590C00D64923 /* Release */ = {
+		25E6AD951939A3510037FB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -223,24 +221,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		254657E31934590C00D64923 /* Build configuration list for PBXProject "Flyweight" */ = {
+		25E6AD851939A3510037FB4B /* Build configuration list for PBXProject "Flyweight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				254657EF1934590C00D64923 /* Debug */,
-				254657F01934590C00D64923 /* Release */,
+				25E6AD911939A3510037FB4B /* Debug */,
+				25E6AD921939A3510037FB4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		254657F11934590C00D64923 /* Build configuration list for PBXNativeTarget "Flyweight" */ = {
+		25E6AD931939A3510037FB4B /* Build configuration list for PBXNativeTarget "Flyweight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				254657F21934590C00D64923 /* Debug */,
-				254657F31934590C00D64923 /* Release */,
+				25E6AD941939A3510037FB4B /* Debug */,
+				25E6AD951939A3510037FB4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 254657E01934590C00D64923 /* Project object */;
+	rootObject = 25E6AD821939A3510037FB4B /* Project object */;
 }

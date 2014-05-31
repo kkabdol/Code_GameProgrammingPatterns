@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		254658081935D83C00D64923 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254658071935D83C00D64923 /* main.cpp */; };
-		2546580A1935D83C00D64923 /* Observer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 254658091935D83C00D64923 /* Observer.1 */; };
-		254658181935DCF000D64923 /* Achievements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254658161935DCF000D64923 /* Achievements.cpp */; };
-		2546581B1935DED700D64923 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254658191935DED700D64923 /* Hero.cpp */; };
-		2546581D1935E24C00D64923 /* Subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2546581C1935E24C00D64923 /* Subject.cpp */; };
-		254658201935E2A400D64923 /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2546581E1935E2A400D64923 /* Physics.cpp */; };
-		25D04D2919371EE2003E3C5A /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25D04D2819371EE2003E3C5A /* Observer.cpp */; };
+		25E6ADAE1939A3C30037FB4B /* Observer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25E6ADAD1939A3C30037FB4B /* Observer.1 */; };
+		25E6ADC11939A4170037FB4B /* Achievements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6ADBB1939A4170037FB4B /* Achievements.cpp */; };
+		25E6ADC21939A4170037FB4B /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6ADBC1939A4170037FB4B /* Hero.cpp */; };
+		25E6ADC31939A4170037FB4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6ADBD1939A4170037FB4B /* main.cpp */; };
+		25E6ADC41939A4170037FB4B /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6ADBE1939A4170037FB4B /* Observer.cpp */; };
+		25E6ADC51939A4170037FB4B /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6ADBF1939A4170037FB4B /* Physics.cpp */; };
+		25E6ADC61939A4170037FB4B /* Subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6ADC01939A4170037FB4B /* Subject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		254658021935D83C00D64923 /* CopyFiles */ = {
+		25E6ADA61939A3C30037FB4B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				2546580A1935D83C00D64923 /* Observer.1 in CopyFiles */,
+				25E6ADAE1939A3C30037FB4B /* Observer.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		254658041935D83C00D64923 /* Observer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Observer; sourceTree = BUILT_PRODUCTS_DIR; };
-		254658071935D83C00D64923 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		254658091935D83C00D64923 /* Observer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Observer.1; sourceTree = "<group>"; };
-		254658111935D85100D64923 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
-		254658131935D91D00D64923 /* Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
-		254658141935D97600D64923 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		254658151935D9ED00D64923 /* Subject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
-		254658161935DCF000D64923 /* Achievements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Achievements.cpp; sourceTree = "<group>"; };
-		254658171935DCF000D64923 /* Achievements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievements.h; sourceTree = "<group>"; };
-		254658191935DED700D64923 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
-		2546581A1935DED700D64923 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		2546581C1935E24C00D64923 /* Subject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Subject.cpp; sourceTree = "<group>"; };
-		2546581E1935E2A400D64923 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; };
-		2546581F1935E2A400D64923 /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
-		25D04D2819371EE2003E3C5A /* Observer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
+		25E6ADA81939A3C30037FB4B /* Observer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Observer; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E6ADAD1939A3C30037FB4B /* Observer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Observer.1; sourceTree = "<group>"; };
+		25E6ADB41939A4170037FB4B /* Achievements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievements.h; sourceTree = "<group>"; };
+		25E6ADB51939A4170037FB4B /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		25E6ADB61939A4170037FB4B /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		25E6ADB71939A4170037FB4B /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		25E6ADB81939A4170037FB4B /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		25E6ADB91939A4170037FB4B /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
+		25E6ADBA1939A4170037FB4B /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		25E6ADBB1939A4170037FB4B /* Achievements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Achievements.cpp; sourceTree = "<group>"; };
+		25E6ADBC1939A4170037FB4B /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
+		25E6ADBD1939A4170037FB4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		25E6ADBE1939A4170037FB4B /* Observer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
+		25E6ADBF1939A4170037FB4B /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; };
+		25E6ADC01939A4170037FB4B /* Subject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Subject.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		254658011935D83C00D64923 /* Frameworks */ = {
+		25E6ADA51939A3C30037FB4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,39 +58,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		254657FB1935D83C00D64923 = {
+		25E6AD9F1939A3C30037FB4B = {
 			isa = PBXGroup;
 			children = (
-				254658061935D83C00D64923 /* Observer */,
-				254658051935D83C00D64923 /* Products */,
+				25E6ADAA1939A3C30037FB4B /* Observer */,
+				25E6ADA91939A3C30037FB4B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		254658051935D83C00D64923 /* Products */ = {
+		25E6ADA91939A3C30037FB4B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				254658041935D83C00D64923 /* Observer */,
+				25E6ADA81939A3C30037FB4B /* Observer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		254658061935D83C00D64923 /* Observer */ = {
+		25E6ADAA1939A3C30037FB4B /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				254658071935D83C00D64923 /* main.cpp */,
-				254658091935D83C00D64923 /* Observer.1 */,
-				254658111935D85100D64923 /* Entity.h */,
-				254658191935DED700D64923 /* Hero.cpp */,
-				2546581A1935DED700D64923 /* Hero.h */,
-				254658141935D97600D64923 /* Event.h */,
-				25D04D2819371EE2003E3C5A /* Observer.cpp */,
-				254658131935D91D00D64923 /* Observer.h */,
-				254658161935DCF000D64923 /* Achievements.cpp */,
-				254658171935DCF000D64923 /* Achievements.h */,
-				2546581C1935E24C00D64923 /* Subject.cpp */,
-				254658151935D9ED00D64923 /* Subject.h */,
-				2546581E1935E2A400D64923 /* Physics.cpp */,
-				2546581F1935E2A400D64923 /* Physics.h */,
+				25E6ADB41939A4170037FB4B /* Achievements.h */,
+				25E6ADB51939A4170037FB4B /* Entity.h */,
+				25E6ADB61939A4170037FB4B /* Event.h */,
+				25E6ADB71939A4170037FB4B /* Hero.h */,
+				25E6ADB81939A4170037FB4B /* Observer.h */,
+				25E6ADB91939A4170037FB4B /* Physics.h */,
+				25E6ADBA1939A4170037FB4B /* Subject.h */,
+				25E6ADBB1939A4170037FB4B /* Achievements.cpp */,
+				25E6ADBC1939A4170037FB4B /* Hero.cpp */,
+				25E6ADBD1939A4170037FB4B /* main.cpp */,
+				25E6ADBE1939A4170037FB4B /* Observer.cpp */,
+				25E6ADBF1939A4170037FB4B /* Physics.cpp */,
+				25E6ADC01939A4170037FB4B /* Subject.cpp */,
+				25E6ADAD1939A3C30037FB4B /* Observer.1 */,
 			);
 			path = Observer;
 			sourceTree = "<group>";
@@ -98,13 +98,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		254658031935D83C00D64923 /* Observer */ = {
+		25E6ADA71939A3C30037FB4B /* Observer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2546580D1935D83C00D64923 /* Build configuration list for PBXNativeTarget "Observer" */;
+			buildConfigurationList = 25E6ADB11939A3C30037FB4B /* Build configuration list for PBXNativeTarget "Observer" */;
 			buildPhases = (
-				254658001935D83C00D64923 /* Sources */,
-				254658011935D83C00D64923 /* Frameworks */,
-				254658021935D83C00D64923 /* CopyFiles */,
+				25E6ADA41939A3C30037FB4B /* Sources */,
+				25E6ADA51939A3C30037FB4B /* Frameworks */,
+				25E6ADA61939A3C30037FB4B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -112,53 +112,53 @@
 			);
 			name = Observer;
 			productName = Observer;
-			productReference = 254658041935D83C00D64923 /* Observer */;
+			productReference = 25E6ADA81939A3C30037FB4B /* Observer */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		254657FC1935D83C00D64923 /* Project object */ = {
+		25E6ADA01939A3C30037FB4B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = kkabdol;
 			};
-			buildConfigurationList = 254657FF1935D83C00D64923 /* Build configuration list for PBXProject "Observer" */;
+			buildConfigurationList = 25E6ADA31939A3C30037FB4B /* Build configuration list for PBXProject "Observer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 254657FB1935D83C00D64923;
-			productRefGroup = 254658051935D83C00D64923 /* Products */;
+			mainGroup = 25E6AD9F1939A3C30037FB4B;
+			productRefGroup = 25E6ADA91939A3C30037FB4B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				254658031935D83C00D64923 /* Observer */,
+				25E6ADA71939A3C30037FB4B /* Observer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		254658001935D83C00D64923 /* Sources */ = {
+		25E6ADA41939A3C30037FB4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2546581D1935E24C00D64923 /* Subject.cpp in Sources */,
-				25D04D2919371EE2003E3C5A /* Observer.cpp in Sources */,
-				2546581B1935DED700D64923 /* Hero.cpp in Sources */,
-				254658201935E2A400D64923 /* Physics.cpp in Sources */,
-				254658081935D83C00D64923 /* main.cpp in Sources */,
-				254658181935DCF000D64923 /* Achievements.cpp in Sources */,
+				25E6ADC61939A4170037FB4B /* Subject.cpp in Sources */,
+				25E6ADC11939A4170037FB4B /* Achievements.cpp in Sources */,
+				25E6ADC41939A4170037FB4B /* Observer.cpp in Sources */,
+				25E6ADC51939A4170037FB4B /* Physics.cpp in Sources */,
+				25E6ADC21939A4170037FB4B /* Hero.cpp in Sources */,
+				25E6ADC31939A4170037FB4B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2546580B1935D83C00D64923 /* Debug */ = {
+		25E6ADAF1939A3C30037FB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +196,7 @@
 			};
 			name = Debug;
 		};
-		2546580C1935D83C00D64923 /* Release */ = {
+		25E6ADB01939A3C30037FB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,14 +228,14 @@
 			};
 			name = Release;
 		};
-		2546580E1935D83C00D64923 /* Debug */ = {
+		25E6ADB21939A3C30037FB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		2546580F1935D83C00D64923 /* Release */ = {
+		25E6ADB31939A3C30037FB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -245,25 +245,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		254657FF1935D83C00D64923 /* Build configuration list for PBXProject "Observer" */ = {
+		25E6ADA31939A3C30037FB4B /* Build configuration list for PBXProject "Observer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2546580B1935D83C00D64923 /* Debug */,
-				2546580C1935D83C00D64923 /* Release */,
+				25E6ADAF1939A3C30037FB4B /* Debug */,
+				25E6ADB01939A3C30037FB4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2546580D1935D83C00D64923 /* Build configuration list for PBXNativeTarget "Observer" */ = {
+		25E6ADB11939A3C30037FB4B /* Build configuration list for PBXNativeTarget "Observer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2546580E1935D83C00D64923 /* Debug */,
-				2546580F1935D83C00D64923 /* Release */,
+				25E6ADB21939A3C30037FB4B /* Debug */,
+				25E6ADB31939A3C30037FB4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 254657FC1935D83C00D64923 /* Project object */;
+	rootObject = 25E6ADA01939A3C30037FB4B /* Project object */;
 }

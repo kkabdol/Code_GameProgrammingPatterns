@@ -5,35 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F4B2569F-FE9F-495B-938E-923CDC7D89CC</string>
+	<string>3C5DD510-F5B2-4EAB-A2D5-69B7FBF5F5D4</string>
 	<key>IDESourceControlProjectName</key>
 	<string>GameProgrammingPatterns</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD94C2B2-AA34-42DC-AE30-FA185D3CD9ED</key>
+		<string>https://github.com/kkabdol/GameProgrammingPatterns.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameProgrammingPatterns.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2DF778A8-72B8-4C78-A390-4E79EA07757B</key>
-		<string>../Command</string>
-		<key>4C7B79A8-E4E1-48FF-A5A4-11551BB74E9C</key>
-		<string>../RedoUndoCommand</string>
+		<key>CD94C2B2-AA34-42DC-AE30-FA185D3CD9ED</key>
+		<string>..</string>
 	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kkabdol/GameProgrammingPatterns.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD94C2B2-AA34-42DC-AE30-FA185D3CD9ED</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2DF778A8-72B8-4C78-A390-4E79EA07757B</string>
+			<string>CD94C2B2-AA34-42DC-AE30-FA185D3CD9ED</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Command</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4C7B79A8-E4E1-48FF-A5A4-11551BB74E9C</string>
-			<key>IDESourceControlWCCName</key>
-			<string>RedoUndoCommand</string>
+			<string>GameProgrammingPatterns</string>
 		</dict>
 	</array>
 </dict>
