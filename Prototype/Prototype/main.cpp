@@ -10,26 +10,27 @@
 
 int main(int argc, const char * argv[])
 {
-    Ghost ghost;
-    Demon demon;
-    Sorceror sorceror;
     Monster* monster = nullptr;
+    Spawner* spawner;
     
-    Spawner gs = Spawner(Ghost::clone);
-    monster = gs.spawnMonster();
+    spawner = new SpawnerFor<Ghost>();
+    monster = spawner->spawnMonster();
     monster->scream();
+    delete spawner;
     delete monster;
     
-    Spawner ds = Spawner(Demon::clone);
-    monster = ds.spawnMonster();
+    spawner = new SpawnerFor<Demon>();
+    monster = spawner->spawnMonster();
     monster->scream();
+    delete spawner;
     delete monster;
     
-    Spawner ss = Spawner(Sorceror::clone);
-    monster = ss.spawnMonster();
+    spawner = new SpawnerFor<Sorceror>();
+    monster = spawner->spawnMonster();
     monster->scream();
+    delete spawner;
     delete monster;
-    
+
     return 0;
 }
 

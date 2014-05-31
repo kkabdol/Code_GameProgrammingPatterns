@@ -7,7 +7,3 @@
 //
 
 #include "Spawner.h"
-
-Monster* Spawner::spawnMonster() {
-    return spawn_();
-}
