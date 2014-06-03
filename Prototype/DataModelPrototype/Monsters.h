@@ -14,13 +14,18 @@
 
 class Monsters {
 public:
-    Monsters(const std::string& filename);
+    Monsters(const char* filename);
     ~Monsters();
     size_t size();
     void ShowData(int index);
-    void PrintNode(JSONNODE* node);
+    void ShowData(const char* monsterName);
     
 private:
+    JSONNODE* GetJsonFromFile(const char* filename);
+    void ShowData(JSONNODE* monster);
+    void PrintAttribute(JSONNODE* monster, const char* attributeName);
+    JSONNODE* GetMonster(const char* monsterName);
+    
     JSONNODE* node;
 };
 
