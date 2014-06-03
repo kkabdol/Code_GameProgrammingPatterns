@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DataModelPrototype.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Prototype.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>254A3D97193D901D0092547B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>25E6ADCF1939A50A0037FB4B</key>
 		<dict>
 			<key>primary</key>
