@@ -31,17 +31,21 @@ enum Image
 class Heroine
 {
 public:
-    Heroine() : image_(IMAGE_STAND), state_(STATE_STANDING), yVelocity_(0) {}
+    Heroine() : image_(IMAGE_STAND), state_(STATE_STANDING), yVelocity_(0.0f), chargeTime_(0.0f) {}
     void handleInput(Input input);
+    void update();
     
 private:
     void setGraphics(Image image);
+    void superBomb();
     
     const float JUMP_VELOCITY = 10.0f;
+    const float MAX_CHARGE = 10.0f;
     
     Image image_;
     State state_;
     float yVelocity_;
+    float chargeTime_;
 };
 
 #endif /* defined(__State__Heroine__) */

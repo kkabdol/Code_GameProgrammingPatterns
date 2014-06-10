@@ -7,6 +7,7 @@
 //
 
 #include "Heroine.h"
+#include <iostream>
 
 void Heroine::handleInput(Input input) {
     switch (state_)
@@ -21,6 +22,7 @@ void Heroine::handleInput(Input input) {
             else if (input == PRESS_DOWN)
             {
                 state_ = STATE_DUCKING;
+                chargeTime_ = 0.0f;
                 setGraphics(IMAGE_DUCK);
             }
             break;
@@ -45,6 +47,21 @@ void Heroine::handleInput(Input input) {
     }
 }
 
+void Heroine::update() {
+    if (state_ == STATE_DUCKING)
+    {
+        chargeTime_++;
+        if (chargeTime_ > MAX_CHARGE)
+        {
+            superBomb();
+        }
+    }
+}
+
 void Heroine::setGraphics(Image image) {
     image_ = image;
+}
+
+void superBomb() {
+    std::cout << "Super Bomb !" << std::endl;
 }
