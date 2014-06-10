@@ -62,6 +62,6 @@ void Heroine::setGraphics(Image image) {
     image_ = image;
 }
 
-void superBomb() {
+void Heroine::superBomb() {
     std::cout << "Super Bomb !" << std::endl;
 }
