@@ -11,19 +11,14 @@
 #include "StandingState.h"
 #include <iostream>
 
-Heroine::Heroine() : image_(IMAGE_STAND), state_(nullptr), yVelocity_(0.0f) {
-    state_ = new StandingState(*this);
-}
-
-Heroine::~Heroine() {
-    changeState(nullptr);
+Heroine::Heroine() : image_(IMAGE_STAND), state_(nullptr), yVelocity_(0.0f), diveTime_(0.0f), jumpTime_(0.0f), chargeTime_(0.0f) {
+    state_ = &StandingState::state;
 }
 
 void Heroine::handleInput(Input input) {
     if (state_ != nullptr) {
         state_->handleInput(*this, input);
     }
-    
 }
 
 void Heroine::update() {
@@ -34,10 +29,14 @@ void Heroine::update() {
 
 void Heroine::changeState(HeroineState* state) {
     if (state_ != nullptr) {
-        delete state_;
+        state_->onExit(*this);
     }
     
     state_ = state;
+    
+    if (state_ != nullptr) {
+        state_->onEnter(*this);
+    }
 }
 void Heroine::setGraphics(Image image) {
     std::cout << "Heroine setGraphics(" << image << ")" << std::endl;

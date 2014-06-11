@@ -14,10 +14,11 @@
 class StandingState : public HeroineState
 {
 public:
-    StandingState(Heroine& heroine);
+    static StandingState state;
+    virtual void onEnter(Heroine& heroine);
+    virtual void onExit(Heroine& heroine);
     virtual void handleInput(Heroine& heroine, Input input);
     virtual void update(Heroine& heroine);
-    
 };
 
 #endif /* defined(__State__StandingState__) */

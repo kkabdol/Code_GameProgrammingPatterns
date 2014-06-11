@@ -34,7 +34,6 @@ class Heroine
 {
 public:
     Heroine();
-    ~Heroine();
     virtual void handleInput(Input input);
     virtual void update();
     void changeState(HeroineState* state);
@@ -42,6 +41,9 @@ public:
     void superBomb();
     void setYVelocity(float v);
     
+    float diveTime_;
+    float jumpTime_;
+    float chargeTime_;
 private:
     
     

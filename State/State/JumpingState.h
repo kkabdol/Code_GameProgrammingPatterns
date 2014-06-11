@@ -14,13 +14,14 @@
 class JumpingState : public HeroineState
 {
 public:
-    JumpingState(Heroine& heroine);
+    static JumpingState state;
+    virtual void onEnter(Heroine& heroine);
+    virtual void onExit(Heroine& heroine);
     virtual void handleInput(Heroine& heroine, Input input);
     virtual void update(Heroine& heroine);
 private:
     const float JUMP_VELOCITY = 10.0f;
     const float MAX_JUMP = 10.0f;
-    float jumpTime_;
 };
 
 

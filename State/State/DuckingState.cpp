@@ -10,26 +10,32 @@
 #include "StandingState.h"
 #include <iostream>
 
-DuckingState::DuckingState(Heroine& heroine) : chargeTime_(0.0f) {
-    std::cout << "DuckingState started" << std::endl;
+DuckingState DuckingState::state;
+
+void DuckingState::onEnter(Heroine& heroine) {
+    std::cout << "DuckingState onEnter()" << std::endl;
     
+    heroine.chargeTime_ = 0.0f;
     heroine.setGraphics(IMAGE_DUCK);
+}
+void DuckingState::onExit(Heroine& heroine) {
+    std::cout << "DuckingState onExit()" << std::endl;
 }
 
 void DuckingState::handleInput(Heroine& heroine, Input input) {
     std::cout << "DuckingState::handleInput(" << input << ")" << std::endl;
     
     if (input == RELEASE_DOWN) {
-        heroine.changeState(new StandingState(heroine));
+        heroine.changeState(&StandingState::state);
     }
 }
 
 void DuckingState::update(Heroine& heroine) {
-    chargeTime_ += 1.0f;
+    heroine.chargeTime_ += 1.0f;
     std::cout << "DuckingState::update()" << std::endl;
     
-    if (chargeTime_ >= MAX_CHARGE) {
+    if (heroine.chargeTime_ >= MAX_CHARGE) {
         heroine.superBomb();
-        heroine.changeState(new StandingState(heroine));
+        heroine.changeState(&StandingState::state);
     }
 }

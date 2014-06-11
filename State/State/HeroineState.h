@@ -16,6 +16,8 @@ class HeroineState
 {
 public:
     virtual ~HeroineState() {}
+    virtual void onEnter(Heroine& heroine) = 0;
+    virtual void onExit(Heroine& heroine) = 0;
     virtual void handleInput(Heroine& heroine, Input input) {}
     virtual void update(Heroine& heroine) {}
 };

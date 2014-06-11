@@ -14,12 +14,13 @@
 class DivingState : public HeroineState
 {
 public:
-    DivingState(Heroine& heroine);
+    static DivingState state;
+    virtual void onEnter(Heroine& heroine);
+    virtual void onExit(Heroine& heroine);
     virtual void handleInput(Heroine& heroine, Input input);
     virtual void update(Heroine& heroine);
 private:
     const float MAX_DIVE = 10.0f;
-    float diveTime_;
 };
 
 #endif /* defined(__State__DivingState__) */

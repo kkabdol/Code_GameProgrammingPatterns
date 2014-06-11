@@ -11,27 +11,32 @@
 #include "StandingState.h"
 #include <iostream>
 
+JumpingState JumpingState::state;
 
-JumpingState::JumpingState(Heroine& heroine) : jumpTime_(0.0f) {
-    std::cout << "JumpingState started" << std::endl;
+void JumpingState::onEnter(Heroine& heroine) {
+    std::cout << "JumpingState onEnter()" << std::endl;
     
+    heroine.jumpTime_ = 0.0f;
     heroine.setGraphics(IMAGE_JUMP);
     heroine.setYVelocity(JUMP_VELOCITY);
+}
+void JumpingState::onExit(Heroine& heroine) {
+    std::cout << "JumpingState onExit()" << std::endl;
 }
 
 void JumpingState::handleInput(Heroine& heroine, Input input) {
     std::cout << "JumpingState::handleInput(" << input << ")" << std::endl;
     
     if (input == PRESS_DOWN) {
-        heroine.changeState(new DivingState(heroine));
+        heroine.changeState(&DivingState::state);
     }
 }
 
 void JumpingState::update(Heroine& heroine) {
     std::cout << "JumpingState::update()" << std::endl;
     
-    jumpTime_ += 1.0f;
-    if (jumpTime_ >= MAX_JUMP) {
-        heroine.changeState(new StandingState(heroine));
+    heroine.jumpTime_ += 1.0f;
+    if (heroine.jumpTime_ >= MAX_JUMP) {
+        heroine.changeState(&StandingState::state);
     }
 }

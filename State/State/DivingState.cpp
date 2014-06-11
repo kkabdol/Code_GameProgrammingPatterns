@@ -10,10 +10,16 @@
 #include "StandingState.h"
 #include <iostream>
 
-DivingState::DivingState(Heroine& heroine) : diveTime_(0.0f) {
-    std::cout << "DivingState started" << std::endl;
+DivingState DivingState::state;
 
+void DivingState::onEnter(Heroine& heroine) {
+    std::cout << "DivingState onEnter()" << std::endl;
+    
+    heroine.diveTime_ = 0.0f;
     heroine.setGraphics(IMAGE_DIVE);
+}
+void DivingState::onExit(Heroine& heroine) {
+    std::cout << "DivingState onExit()" << std::endl;
 }
 
 void DivingState::handleInput(Heroine& heroine, Input input) {
@@ -23,8 +29,8 @@ void DivingState::handleInput(Heroine& heroine, Input input) {
 void DivingState::update(Heroine& heroine) {
     std::cout << "DivingState::update()" << std::endl;
     
-    diveTime_ += 1.0f;
-    if (diveTime_ >= MAX_DIVE) {
-        heroine.changeState(new StandingState(heroine));
+    heroine.diveTime_ += 1.0f;
+    if (heroine.diveTime_ >= MAX_DIVE) {
+        heroine.changeState(&StandingState::state);
     }
 }

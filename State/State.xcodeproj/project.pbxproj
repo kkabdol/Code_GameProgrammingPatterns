@@ -80,11 +80,11 @@
 			children = (
 				25E6AE19194809740037FB4B /* state-flowchart.png */,
 				25E6ADFD194707FE0037FB4B /* main.cpp */,
+				25E6AE0B1947105D0037FB4B /* HeroineState.h */,
 				25E6AE0D194711970037FB4B /* DuckingState.cpp */,
 				25E6AE0E194711970037FB4B /* DuckingState.h */,
 				25E6AE10194801D60037FB4B /* StandingState.cpp */,
 				25E6AE11194801D60037FB4B /* StandingState.h */,
-				25E6AE0B1947105D0037FB4B /* HeroineState.h */,
 				25E6AE13194804720037FB4B /* JumpingState.cpp */,
 				25E6AE14194804720037FB4B /* JumpingState.h */,
 				25E6AE161948047C0037FB4B /* DivingState.cpp */,

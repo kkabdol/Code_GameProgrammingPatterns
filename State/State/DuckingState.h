@@ -14,13 +14,13 @@
 class DuckingState : public HeroineState
 {
 public:
-    DuckingState(Heroine& heroine);
+    static DuckingState state;
+    virtual void onEnter(Heroine& heroine);
+    virtual void onExit(Heroine& heroine);
     virtual void handleInput(Heroine& heroine, Input input);
     virtual void update(Heroine& heroine);
-    
 private:
     const float MAX_CHARGE = 10.0f;
-    float chargeTime_;
 };
 
 #endif /* defined(__State__DuckingState__) */
