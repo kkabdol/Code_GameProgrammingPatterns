@@ -7,61 +7,50 @@
 //
 
 #include "Heroine.h"
+#include "HeroineState.h"
+#include "StandingState.h"
 #include <iostream>
 
+Heroine::Heroine() : image_(IMAGE_STAND), state_(nullptr), yVelocity_(0.0f) {
+    state_ = new StandingState(*this);
+}
+
+Heroine::~Heroine() {
+    changeState(nullptr);
+}
+
 void Heroine::handleInput(Input input) {
-    switch (state_)
-    {
-        case STATE_STANDING:
-            if (input == PRESS_B)
-            {
-                state_ = STATE_JUMPING;
-                yVelocity_ = JUMP_VELOCITY;
-                setGraphics(IMAGE_JUMP);
-            }
-            else if (input == PRESS_DOWN)
-            {
-                state_ = STATE_DUCKING;
-                chargeTime_ = 0.0f;
-                setGraphics(IMAGE_DUCK);
-            }
-            break;
-            
-        case STATE_JUMPING:
-            if (input == PRESS_DOWN)
-            {
-                state_ = STATE_DIVING;
-                setGraphics(IMAGE_DIVE);
-            }
-            break;
-            
-        case STATE_DUCKING:
-            if (input == RELEASE_DOWN)
-            {
-                state_ = STATE_STANDING;
-                setGraphics(IMAGE_STAND);
-            }
-            break;
-        default:
-            break;
+    if (state_ != nullptr) {
+        state_->handleInput(*this, input);
     }
+    
 }
 
 void Heroine::update() {
-    if (state_ == STATE_DUCKING)
-    {
-        chargeTime_++;
-        if (chargeTime_ > MAX_CHARGE)
-        {
-            superBomb();
-        }
+    if (state_ != nullptr) {
+        state_->update(*this);
     }
 }
 
+void Heroine::changeState(HeroineState* state) {
+    if (state_ != nullptr) {
+        delete state_;
+    }
+    
+    state_ = state;
+}
 void Heroine::setGraphics(Image image) {
+    std::cout << "Heroine setGraphics(" << image << ")" << std::endl;
+    
     image_ = image;
 }
 
 void Heroine::superBomb() {
-    std::cout << "Super Bomb !" << std::endl;
+    std::cout << "Heroine superBomb()" << std::endl;
+}
+
+void Heroine::setYVelocity(float v) {
+    std::cout << "Heroine setYVelocity(" << v << ")" << std::endl;
+    
+    yVelocity_ = v;
 }

@@ -11,41 +11,43 @@
 
 #include "Input.h"
 
+class HeroineState;
+
 #warning should I declare these enum outside of the class?
 enum State
 {
     STATE_STANDING,
     STATE_JUMPING,
     STATE_DUCKING,
-    STATE_DIVING
+    STATE_DIVING,
 };
 
 enum Image
 {
-    IMAGE_DUCK,
+    IMAGE_STAND,
     IMAGE_JUMP,
+    IMAGE_DUCK,
     IMAGE_DIVE,
-    IMAGE_STAND
 };
 
 class Heroine
 {
 public:
-    Heroine() : image_(IMAGE_STAND), state_(STATE_STANDING), yVelocity_(0.0f), chargeTime_(0.0f) {}
-    void handleInput(Input input);
-    void update();
-    
-private:
+    Heroine();
+    ~Heroine();
+    virtual void handleInput(Input input);
+    virtual void update();
+    void changeState(HeroineState* state);
     void setGraphics(Image image);
     void superBomb();
+    void setYVelocity(float v);
     
-    const float JUMP_VELOCITY = 10.0f;
-    const float MAX_CHARGE = 10.0f;
+private:
+    
     
     Image image_;
-    State state_;
+    HeroineState* state_;
     float yVelocity_;
-    float chargeTime_;
 };
 
 #endif /* defined(__State__Heroine__) */

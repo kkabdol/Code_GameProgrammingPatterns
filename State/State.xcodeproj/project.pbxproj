@@ -10,6 +10,10 @@
 		25E6ADFE194707FE0037FB4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6ADFD194707FE0037FB4B /* main.cpp */; };
 		25E6AE00194707FE0037FB4B /* State.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25E6ADFF194707FE0037FB4B /* State.1 */; };
 		25E6AE081947084B0037FB4B /* Heroine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6AE061947084B0037FB4B /* Heroine.cpp */; };
+		25E6AE0F194711970037FB4B /* DuckingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6AE0D194711970037FB4B /* DuckingState.cpp */; };
+		25E6AE12194801D60037FB4B /* StandingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6AE10194801D60037FB4B /* StandingState.cpp */; };
+		25E6AE15194804720037FB4B /* JumpingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6AE13194804720037FB4B /* JumpingState.cpp */; };
+		25E6AE181948047C0037FB4B /* DivingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E6AE161948047C0037FB4B /* DivingState.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +36,16 @@
 		25E6AE061947084B0037FB4B /* Heroine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Heroine.cpp; sourceTree = "<group>"; };
 		25E6AE071947084B0037FB4B /* Heroine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heroine.h; sourceTree = "<group>"; };
 		25E6AE09194708830037FB4B /* Input.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
+		25E6AE0B1947105D0037FB4B /* HeroineState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroineState.h; sourceTree = "<group>"; };
+		25E6AE0D194711970037FB4B /* DuckingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DuckingState.cpp; sourceTree = "<group>"; };
+		25E6AE0E194711970037FB4B /* DuckingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckingState.h; sourceTree = "<group>"; };
+		25E6AE10194801D60037FB4B /* StandingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandingState.cpp; sourceTree = "<group>"; };
+		25E6AE11194801D60037FB4B /* StandingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandingState.h; sourceTree = "<group>"; };
+		25E6AE13194804720037FB4B /* JumpingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JumpingState.cpp; sourceTree = "<group>"; };
+		25E6AE14194804720037FB4B /* JumpingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpingState.h; sourceTree = "<group>"; };
+		25E6AE161948047C0037FB4B /* DivingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DivingState.cpp; sourceTree = "<group>"; };
+		25E6AE171948047C0037FB4B /* DivingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DivingState.h; sourceTree = "<group>"; };
+		25E6AE19194809740037FB4B /* state-flowchart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "state-flowchart.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +78,17 @@
 		25E6ADFC194707FE0037FB4B /* State */ = {
 			isa = PBXGroup;
 			children = (
+				25E6AE19194809740037FB4B /* state-flowchart.png */,
 				25E6ADFD194707FE0037FB4B /* main.cpp */,
+				25E6AE0D194711970037FB4B /* DuckingState.cpp */,
+				25E6AE0E194711970037FB4B /* DuckingState.h */,
+				25E6AE10194801D60037FB4B /* StandingState.cpp */,
+				25E6AE11194801D60037FB4B /* StandingState.h */,
+				25E6AE0B1947105D0037FB4B /* HeroineState.h */,
+				25E6AE13194804720037FB4B /* JumpingState.cpp */,
+				25E6AE14194804720037FB4B /* JumpingState.h */,
+				25E6AE161948047C0037FB4B /* DivingState.cpp */,
+				25E6AE171948047C0037FB4B /* DivingState.h */,
 				25E6ADFF194707FE0037FB4B /* State.1 */,
 				25E6AE061947084B0037FB4B /* Heroine.cpp */,
 				25E6AE071947084B0037FB4B /* Heroine.h */,
@@ -126,6 +150,10 @@
 			files = (
 				25E6AE081947084B0037FB4B /* Heroine.cpp in Sources */,
 				25E6ADFE194707FE0037FB4B /* main.cpp in Sources */,
+				25E6AE0F194711970037FB4B /* DuckingState.cpp in Sources */,
+				25E6AE12194801D60037FB4B /* StandingState.cpp in Sources */,
+				25E6AE181948047C0037FB4B /* DivingState.cpp in Sources */,
+				25E6AE15194804720037FB4B /* JumpingState.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
