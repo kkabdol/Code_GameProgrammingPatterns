@@ -7,12 +7,16 @@
 //
 
 #include <iostream>
+#include "Scene.h"
+#include "Display.h"
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Scene scene;
+    scene.draw();
+    
+    Display::draw(scene.getBuffer());
+    
     return 0;
 }
 

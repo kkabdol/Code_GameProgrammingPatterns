@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		25FC78B519502A2E00112D95 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FC78B419502A2E00112D95 /* main.cpp */; };
 		25FC78B719502A2E00112D95 /* DoubleBuffer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25FC78B619502A2E00112D95 /* DoubleBuffer.1 */; };
+		25FC78BF1950479A00112D95 /* FrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FC78BD1950479A00112D95 /* FrameBuffer.cpp */; };
+		25FC78C2195048C700112D95 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FC78C0195048C700112D95 /* Scene.cpp */; };
+		25FC78C519504A6E00112D95 /* Display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FC78C319504A6E00112D95 /* Display.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,12 @@
 		25FC78B119502A2E00112D95 /* DoubleBuffer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DoubleBuffer; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FC78B419502A2E00112D95 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		25FC78B619502A2E00112D95 /* DoubleBuffer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DoubleBuffer.1; sourceTree = "<group>"; };
+		25FC78BD1950479A00112D95 /* FrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBuffer.cpp; sourceTree = "<group>"; };
+		25FC78BE1950479A00112D95 /* FrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffer.h; sourceTree = "<group>"; };
+		25FC78C0195048C700112D95 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		25FC78C1195048C700112D95 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		25FC78C319504A6E00112D95 /* Display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Display.cpp; sourceTree = "<group>"; };
+		25FC78C419504A6E00112D95 /* Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 			children = (
 				25FC78B419502A2E00112D95 /* main.cpp */,
 				25FC78B619502A2E00112D95 /* DoubleBuffer.1 */,
+				25FC78BD1950479A00112D95 /* FrameBuffer.cpp */,
+				25FC78BE1950479A00112D95 /* FrameBuffer.h */,
+				25FC78C0195048C700112D95 /* Scene.cpp */,
+				25FC78C1195048C700112D95 /* Scene.h */,
+				25FC78C319504A6E00112D95 /* Display.cpp */,
+				25FC78C419504A6E00112D95 /* Display.h */,
 			);
 			path = DoubleBuffer;
 			sourceTree = "<group>";
@@ -117,7 +132,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FC78C2195048C700112D95 /* Scene.cpp in Sources */,
 				25FC78B519502A2E00112D95 /* main.cpp in Sources */,
+				25FC78C519504A6E00112D95 /* Display.cpp in Sources */,
+				25FC78BF1950479A00112D95 /* FrameBuffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +245,7 @@
 				25FC78BC19502A2E00112D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
