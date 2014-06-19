@@ -14,10 +14,16 @@
 class Scene
 {
 public:
+    Scene();
     void draw();
     FrameBuffer& getBuffer();
+    
 private:
-    FrameBuffer buffer_;
+    void swap();
+    
+    FrameBuffer* current_;
+    FrameBuffer* next_;
+    FrameBuffer buffer_[2];
 };
 
 #endif /* defined(__DoubleBuffer__Scene__) */
