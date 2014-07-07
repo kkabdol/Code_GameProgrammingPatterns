@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257081C6196AA8DD00BA75DB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 257081C5196AA8DD00BA75DB /* main.cpp */; };
+		257081C8196AA8DD00BA75DB /* DoubleBufferedAI.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 257081C7196AA8DD00BA75DB /* DoubleBufferedAI.1 */; };
+		257081CE196AA8F100BA75DB /* Actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 257081CC196AA8F100BA75DB /* Actor.cpp */; };
+		257081D1196AAA4000BA75DB /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 257081CF196AAA4000BA75DB /* Stage.cpp */; };
+		257081D4196AAB3800BA75DB /* Comedian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 257081D2196AAB3800BA75DB /* Comedian.cpp */; };
 		25FC78B519502A2E00112D95 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FC78B419502A2E00112D95 /* main.cpp */; };
 		25FC78B719502A2E00112D95 /* DoubleBuffer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25FC78B619502A2E00112D95 /* DoubleBuffer.1 */; };
 		25FC78BF1950479A00112D95 /* FrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FC78BD1950479A00112D95 /* FrameBuffer.cpp */; };
@@ -15,6 +20,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		257081C1196AA8DD00BA75DB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				257081C8196AA8DD00BA75DB /* DoubleBufferedAI.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		25FC78AF19502A2E00112D95 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -28,6 +43,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		257081C3196AA8DD00BA75DB /* DoubleBufferedAI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DoubleBufferedAI; sourceTree = BUILT_PRODUCTS_DIR; };
+		257081C5196AA8DD00BA75DB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		257081C7196AA8DD00BA75DB /* DoubleBufferedAI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DoubleBufferedAI.1; sourceTree = "<group>"; };
+		257081CC196AA8F100BA75DB /* Actor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Actor.cpp; sourceTree = "<group>"; };
+		257081CD196AA8F100BA75DB /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
+		257081CF196AAA4000BA75DB /* Stage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stage.cpp; sourceTree = "<group>"; };
+		257081D0196AAA4000BA75DB /* Stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage.h; sourceTree = "<group>"; };
+		257081D2196AAB3800BA75DB /* Comedian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Comedian.cpp; sourceTree = "<group>"; };
+		257081D3196AAB3800BA75DB /* Comedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comedian.h; sourceTree = "<group>"; };
 		25FC78B119502A2E00112D95 /* DoubleBuffer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DoubleBuffer; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FC78B419502A2E00112D95 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		25FC78B619502A2E00112D95 /* DoubleBuffer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DoubleBuffer.1; sourceTree = "<group>"; };
@@ -40,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		257081C0196AA8DD00BA75DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		25FC78AE19502A2E00112D95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +81,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257081C4196AA8DD00BA75DB /* DoubleBufferedAI */ = {
+			isa = PBXGroup;
+			children = (
+				257081C5196AA8DD00BA75DB /* main.cpp */,
+				257081CC196AA8F100BA75DB /* Actor.cpp */,
+				257081CD196AA8F100BA75DB /* Actor.h */,
+				257081C7196AA8DD00BA75DB /* DoubleBufferedAI.1 */,
+				257081CF196AAA4000BA75DB /* Stage.cpp */,
+				257081D0196AAA4000BA75DB /* Stage.h */,
+				257081D2196AAB3800BA75DB /* Comedian.cpp */,
+				257081D3196AAB3800BA75DB /* Comedian.h */,
+			);
+			path = DoubleBufferedAI;
+			sourceTree = "<group>";
+		};
 		25FC78A819502A2E00112D95 = {
 			isa = PBXGroup;
 			children = (
 				25FC78B319502A2E00112D95 /* DoubleBuffer */,
+				257081C4196AA8DD00BA75DB /* DoubleBufferedAI */,
 				25FC78B219502A2E00112D95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				25FC78B119502A2E00112D95 /* DoubleBuffer */,
+				257081C3196AA8DD00BA75DB /* DoubleBufferedAI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +132,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		257081C2196AA8DD00BA75DB /* DoubleBufferedAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 257081CB196AA8DD00BA75DB /* Build configuration list for PBXNativeTarget "DoubleBufferedAI" */;
+			buildPhases = (
+				257081BF196AA8DD00BA75DB /* Sources */,
+				257081C0196AA8DD00BA75DB /* Frameworks */,
+				257081C1196AA8DD00BA75DB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoubleBufferedAI;
+			productName = DoubleBufferedAI;
+			productReference = 257081C3196AA8DD00BA75DB /* DoubleBufferedAI */;
+			productType = "com.apple.product-type.tool";
+		};
 		25FC78B019502A2E00112D95 /* DoubleBuffer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25FC78BA19502A2E00112D95 /* Build configuration list for PBXNativeTarget "DoubleBuffer" */;
@@ -123,11 +188,23 @@
 			projectRoot = "";
 			targets = (
 				25FC78B019502A2E00112D95 /* DoubleBuffer */,
+				257081C2196AA8DD00BA75DB /* DoubleBufferedAI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		257081BF196AA8DD00BA75DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257081C6196AA8DD00BA75DB /* main.cpp in Sources */,
+				257081D4196AAB3800BA75DB /* Comedian.cpp in Sources */,
+				257081CE196AA8F100BA75DB /* Actor.cpp in Sources */,
+				257081D1196AAA4000BA75DB /* Stage.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		25FC78AD19502A2E00112D95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +219,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		257081C9196AA8DD00BA75DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		257081CA196AA8DD00BA75DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		25FC78B819502A2E00112D95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -229,6 +324,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		257081CB196AA8DD00BA75DB /* Build configuration list for PBXNativeTarget "DoubleBufferedAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				257081C9196AA8DD00BA75DB /* Debug */,
+				257081CA196AA8DD00BA75DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		25FC78AC19502A2E00112D95 /* Build configuration list for PBXProject "DoubleBuffer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

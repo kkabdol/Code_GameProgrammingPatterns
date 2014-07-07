@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>DoubleBufferedAI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>257081C2196AA8DD00BA75DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>25FC78B019502A2E00112D95</key>
 		<dict>
 			<key>primary</key>
