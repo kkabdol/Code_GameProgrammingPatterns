@@ -15,28 +15,27 @@ using namespace std;
 class Actor
 {
 public:
-    Actor(string name) : name_(name), currentSlapped_(false) {}
-
+    static void init() { current_ = 0; }
+    static void swap() { current_ = next(); }
+    
+    Actor(string name) : name_(name) {}
+    
     virtual ~Actor() {}
     virtual void update() = 0;
     
-    void swap()
-    {
-        // Swap the buffer.
-        currentSlapped_ = nextSlapped_;
-        
-        // Clear the new "next" buffer.
-        nextSlapped_ = false;
-    }
-    
-    void slap()         { nextSlapped_ = true; }
-    bool wasSlapped()   { return currentSlapped_; }
+    void slap()         { slapped_[next()] = true; }
+    bool wasSlapped()   { return slapped_[current_]; }
     string& name()      { return name_; }
 
 private:
-    bool currentSlapped_;
-    bool nextSlapped_;
+    static int current_;
+    static int next()   { return 1 - current_; }
+    
+    bool slapped_[2];
     string name_;
 };
+
+
+int Actor::current_;
 
 #endif /* defined(__DoubleBuffer__Actor__) */

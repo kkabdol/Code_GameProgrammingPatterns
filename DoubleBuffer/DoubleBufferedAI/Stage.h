@@ -28,9 +28,7 @@ public:
             actors_[i]->update();
         }
 
-        for (int i = 0; i < NUM_ACTORS; ++i) {
-            actors_[i]->swap();
-        }
+        Actor::swap();
     }
     
 private:

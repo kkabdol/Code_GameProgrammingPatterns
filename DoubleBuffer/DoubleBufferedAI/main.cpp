@@ -13,6 +13,7 @@
 int main(int argc, const char * argv[])
 {
     Stage stage;
+    Actor::init();
     
     Comedian* harry = new Comedian("Harry");
     Comedian* baldy = new Comedian("Baldy");
