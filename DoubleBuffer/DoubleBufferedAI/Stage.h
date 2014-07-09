@@ -10,6 +10,8 @@
 #define __DoubleBuffer__Stage__
 
 #include "Actor.h"
+#include <iostream>
+using namespace std;
 
 class Stage
 {
@@ -22,6 +24,7 @@ public:
     void update()
     {
         for (int i = 0; i < NUM_ACTORS; ++i) {
+            cout << "Stage updates actor " << i << " (" << actors_[i]->name() << ")" << endl;
             actors_[i]->update();
             actors_[i]->reset();
         }

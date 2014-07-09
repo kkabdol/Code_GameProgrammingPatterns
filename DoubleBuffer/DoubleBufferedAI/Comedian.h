@@ -26,7 +26,11 @@ public:
     
     virtual void update()
     {
-        if (wasSlapped()) facing_->slap();
+        if (wasSlapped()) {
+            cout << name() << " was slapped, so he slaps " << facing_->name() << endl;
+
+            facing_->slap();
+        }
     }
     
     

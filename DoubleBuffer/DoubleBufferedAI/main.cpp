@@ -14,13 +14,20 @@ int main(int argc, const char * argv[])
 {
     Stage stage;
     
-    Comedian* harry = new Comedian("harry");
-    Comedian* baldy = new Comedian("baldy");
-    Comedian* chump = new Comedian("chump");
+    Comedian* harry = new Comedian("Harry");
+    Comedian* baldy = new Comedian("Baldy");
+    Comedian* chump = new Comedian("Chump");
     
     harry->face(baldy);
     baldy->face(chump);
     chump->face(harry);
+    
+    stage.add(harry, 0);
+    stage.add(baldy, 1);
+    stage.add(chump, 2);
+    
+    harry->slap();
+    stage.update();
     
     delete chump;
     delete baldy;
