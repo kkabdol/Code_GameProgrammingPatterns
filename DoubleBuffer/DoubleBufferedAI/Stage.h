@@ -24,9 +24,12 @@ public:
     void update()
     {
         for (int i = 0; i < NUM_ACTORS; ++i) {
-            cout << "Stage updates actor " << i << " (" << actors_[i]->name() << ")" << endl;
+//            cout << "Stage updates actor " << i << " (" << actors_[i]->name() << ")" << endl;
             actors_[i]->update();
-            actors_[i]->reset();
+        }
+
+        for (int i = 0; i < NUM_ACTORS; ++i) {
+            actors_[i]->swap();
         }
     }
     

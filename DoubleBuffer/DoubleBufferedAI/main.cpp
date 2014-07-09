@@ -27,7 +27,10 @@ int main(int argc, const char * argv[])
     stage.add(chump, 2);
     
     harry->slap();
-    stage.update();
+    
+    while (1) {
+        stage.update();
+    }
     
     delete chump;
     delete baldy;
