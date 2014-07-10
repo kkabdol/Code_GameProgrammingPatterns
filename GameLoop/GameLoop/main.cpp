@@ -14,23 +14,31 @@
 using namespace std;
 
 const double MS_PER_FRAME = 1000.0 / 60.0;
+const double MS_PER_UPDATE = 10.0 * MS_PER_FRAME;
 
 void processInput();
-void update(double elapsed);
+void update();
 void render();
 
 int main(int argc, const char * argv[])
 {
-    time_t lastTime = time(nullptr);
+    time_t previous = time(nullptr);
+    double lag = 0.0;
+    
     while (true) {
         time_t current = time(nullptr);
-        double elapsed = difftime(current, lastTime);
+        double elapsed = difftime(current, previous);
+        previous = current;
+        lag += elapsed;
         
         processInput();
-        update(elapsed);
-        render();
         
-        lastTime = current;
+        while (lag >= MS_PER_UPDATE) {
+            update();
+            lag -= MS_PER_UPDATE;
+        }
+
+        render();
     }
     
     return 0;
@@ -40,7 +48,7 @@ int main(int argc, const char * argv[])
 void processInput() {
 }
 
-void update(double elapsed) {
+void update() {
 }
 
 void render() {
