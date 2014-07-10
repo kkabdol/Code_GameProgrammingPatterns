@@ -18,7 +18,7 @@ const double MS_PER_UPDATE = 10.0 * MS_PER_FRAME;
 
 void processInput();
 void update();
-void render();
+void render(double delta);
 
 int main(int argc, const char * argv[])
 {
@@ -31,14 +31,17 @@ int main(int argc, const char * argv[])
         previous = current;
         lag += elapsed;
         
+        // 1. processing input function without blocking
         processInput();
         
+        // 2. deterministic update function
         while (lag >= MS_PER_UPDATE) {
             update();
             lag -= MS_PER_UPDATE;
         }
 
-        render();
+        // 3. extrapolated render function
+        render(lag / MS_PER_UPDATE);
     }
     
     return 0;
@@ -51,5 +54,5 @@ void processInput() {
 void update() {
 }
 
-void render() {
+void render(double delta) {
 }
