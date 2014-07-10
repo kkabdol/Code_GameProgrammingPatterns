@@ -16,20 +16,21 @@ using namespace std;
 const double MS_PER_FRAME = 1000.0 / 60.0;
 
 void processInput();
-void update();
+void update(double elapsed);
 void render();
-void sleepForOneTick(const time_t& start, double millisecondsPerFrame);
 
 int main(int argc, const char * argv[])
 {
+    time_t lastTime = time(nullptr);
     while (true) {
-        time_t start = time(nullptr);
-
+        time_t current = time(nullptr);
+        double elapsed = difftime(current, lastTime);
+        
         processInput();
-        update();
+        update(elapsed);
         render();
         
-        sleepForOneTick(start, MS_PER_FRAME);
+        lastTime = current;
     }
     
     return 0;
@@ -39,17 +40,8 @@ int main(int argc, const char * argv[])
 void processInput() {
 }
 
-void update() {
+void update(double elapsed) {
 }
 
 void render() {
-}
-
-void sleepForOneTick(const time_t& start, double millisecondsPerFrame) {
-    double diff = (difftime(time(nullptr), start) * 1000.0); // milliseconds
-    long long dur = static_cast<long long>(millisecondsPerFrame - diff);
-    
-    if (dur > 0) {
-        this_thread::sleep_for(chrono::milliseconds(dur));
-    }
 }
