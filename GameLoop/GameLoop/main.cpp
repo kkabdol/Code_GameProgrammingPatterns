@@ -8,13 +8,11 @@
 
 #include <iostream>
 #include <ctime>
-#include <thread>
-#include <chrono>
 
 using namespace std;
 
-const double MS_PER_FRAME = 1000.0 / 60.0;
-const double MS_PER_UPDATE = 10.0 * MS_PER_FRAME;
+static const double MS_PER_FRAME = 1000.0 / 60.0;
+static const double MS_PER_UPDATE = 10.0 * MS_PER_FRAME;
 
 void processInput();
 void update();

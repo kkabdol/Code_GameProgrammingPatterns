@@ -19,20 +19,20 @@ class Skeleton : public Entity
 public:
     Skeleton() : patrollingLeft_(false) {}
 
-    virtual void update()
+    virtual void update(double elapsed)
     {
         if (patrollingLeft_)
         {
-            setX(x() - 1);
-            if (x() == 0) {
+            setX(x() - elapsed);
+            if (x() <= 0) {
                 patrollingLeft_ = false;
                 cout << "A skeleton changed patrolling direction to right" << endl;
             }
         }
         else
         {
-            setX(x() + 1);
-            if (x() == 100) {
+            setX(x() + elapsed);
+            if (x() >= 5) {
                 patrollingLeft_ = true;
                 cout << "A skeleton changed patrolling direction to left" << endl;
             }

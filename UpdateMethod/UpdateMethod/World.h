@@ -18,20 +18,7 @@ class World
 public:
     World() : numEntities_(0) {}
     
-    void gameLoop()
-    {
-        while (true)
-        {
-            // Handle user input
-            
-            // Update each entity
-            for (int i = 0; i < numEntities_; ++i) {
-                entities_[i]->update();
-            }
-            
-            // Physics and rendering
-        }
-    }
+    void gameLoop();
     
     void addEntity(Entity* entity)
     {

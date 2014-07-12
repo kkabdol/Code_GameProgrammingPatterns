@@ -15,7 +15,7 @@ public:
     Entity() : x_(0.0), y_(0.0) {}
     
     virtual ~Entity() {}
-    virtual void update() = 0;
+    virtual void update(double elapsed) = 0;
     
     double x() const { return x_; }
     double y() const { return y_; }

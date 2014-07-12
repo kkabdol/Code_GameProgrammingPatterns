@@ -79,9 +79,9 @@
 				250B4C8919710F1F004B30EE /* Skeleton.h */,
 				250B4C7B196FC3B1004B30EE /* UpdateMethod.1 */,
 				250B4C8519710A98004B30EE /* World.cpp */,
+				250B4C8619710A98004B30EE /* World.h */,
 				250B4C8B1971117E004B30EE /* Statue.cpp */,
 				250B4C8C1971117E004B30EE /* Statue.h */,
-				250B4C8619710A98004B30EE /* World.h */,
 			);
 			path = UpdateMethod;
 			sourceTree = "<group>";

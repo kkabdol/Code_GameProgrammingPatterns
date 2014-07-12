@@ -17,22 +17,24 @@ using namespace std;
 class Statue : public Entity
 {
 public:
-    Statue(int delay) : frames_(0), delay_(delay) {}
+    Statue(double delay) : frames_(0.0), delay_(delay) {}
     
-    virtual void update()
+    virtual void update(double elapsed)
     {
-        if (++frames_ == delay_)
+        frames_ += elapsed;
+        
+        if (frames_ == delay_)
         {
             shootLightning();
             
             // Reset the timer.
-            frames_ = 0;
+            frames_ -= delay_;
         }
     }
     
 private:
-    int frames_;
-    int delay_;
+    double frames_;
+    double delay_;
     
     void shootLightning()
     {
