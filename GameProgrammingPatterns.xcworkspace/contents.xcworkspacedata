@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UpdateMethod/UpdateMethod.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:GameLoop/GameLoop.xcodeproj">
    </FileRef>
    <FileRef
