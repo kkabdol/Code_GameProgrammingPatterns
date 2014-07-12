@@ -9,6 +9,8 @@
 #ifndef __UpdateMethod__Entity__
 #define __UpdateMethod__Entity__
 
+#warning avoid using Entity class inheritance. use Component, State or Type Object pattern instead.
+
 class Entity
 {
 public:

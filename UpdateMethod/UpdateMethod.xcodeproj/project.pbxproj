@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		250B4C7A196FC3B1004B30EE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250B4C79196FC3B1004B30EE /* main.cpp */; };
 		250B4C7C196FC3B1004B30EE /* UpdateMethod.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 250B4C7B196FC3B1004B30EE /* UpdateMethod.1 */; };
-		250B4C84196FC3BC004B30EE /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250B4C82196FC3BC004B30EE /* Entity.cpp */; };
-		250B4C8719710A98004B30EE /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250B4C8519710A98004B30EE /* World.cpp */; };
-		250B4C8A19710F1F004B30EE /* Skeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250B4C8819710F1F004B30EE /* Skeleton.cpp */; };
-		250B4C8D1971117E004B30EE /* Statue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250B4C8B1971117E004B30EE /* Statue.cpp */; };
+		250B4C8F19711CF8004B30EE /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250B4C8E19711CF8004B30EE /* World.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,14 +29,11 @@
 		250B4C76196FC3B1004B30EE /* UpdateMethod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UpdateMethod; sourceTree = BUILT_PRODUCTS_DIR; };
 		250B4C79196FC3B1004B30EE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		250B4C7B196FC3B1004B30EE /* UpdateMethod.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = UpdateMethod.1; sourceTree = "<group>"; };
-		250B4C82196FC3BC004B30EE /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		250B4C83196FC3BC004B30EE /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
-		250B4C8519710A98004B30EE /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
 		250B4C8619710A98004B30EE /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
-		250B4C8819710F1F004B30EE /* Skeleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Skeleton.cpp; sourceTree = "<group>"; };
 		250B4C8919710F1F004B30EE /* Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skeleton.h; sourceTree = "<group>"; };
-		250B4C8B1971117E004B30EE /* Statue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Statue.cpp; sourceTree = "<group>"; };
 		250B4C8C1971117E004B30EE /* Statue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statue.h; sourceTree = "<group>"; };
+		250B4C8E19711CF8004B30EE /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = ../../../../.Trash/World.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				250B4C79196FC3B1004B30EE /* main.cpp */,
-				250B4C82196FC3BC004B30EE /* Entity.cpp */,
 				250B4C83196FC3BC004B30EE /* Entity.h */,
-				250B4C8819710F1F004B30EE /* Skeleton.cpp */,
 				250B4C8919710F1F004B30EE /* Skeleton.h */,
 				250B4C7B196FC3B1004B30EE /* UpdateMethod.1 */,
-				250B4C8519710A98004B30EE /* World.cpp */,
+				250B4C8E19711CF8004B30EE /* World.cpp */,
 				250B4C8619710A98004B30EE /* World.h */,
-				250B4C8B1971117E004B30EE /* Statue.cpp */,
 				250B4C8C1971117E004B30EE /* Statue.h */,
 			);
 			path = UpdateMethod;
@@ -137,11 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250B4C84196FC3BC004B30EE /* Entity.cpp in Sources */,
+				250B4C8F19711CF8004B30EE /* World.cpp in Sources */,
 				250B4C7A196FC3B1004B30EE /* main.cpp in Sources */,
-				250B4C8A19710F1F004B30EE /* Skeleton.cpp in Sources */,
-				250B4C8D1971117E004B30EE /* Statue.cpp in Sources */,
-				250B4C8719710A98004B30EE /* World.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
