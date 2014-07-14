@@ -11,8 +11,6 @@
 
 #include "Entity.h"
 
-static const int MAX_ENTITIES = 1024;
-
 class World
 {
 public:
@@ -44,6 +42,9 @@ public:
     }
     
 private:
+    constexpr static const int MAX_ENTITIES = 1024;
+    constexpr static const double SEC_PER_FRAME = 1.0 / 60.0;
+    constexpr static const double SEC_PER_UPDATE = 10.0 * SEC_PER_FRAME;
     Entity* entities_[MAX_ENTITIES];
     int numEntities_;
 };
